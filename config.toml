@@ -1,0 +1,22 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = "hugo-theme-shell"
+
+[Params]
+  [Params.Terminal]
+    scheme = "Molokai"
+
+
+  [Params.Tree]
+  use = true
+   files = [ 
+    ["Automate G. FORM", "/advanced"],
+    ["PYTHON BROWSER", "/python"],
+    ["InCTFj Writeups", "/post"],
+    ["SpaceHero CTF", "/cyber"],
+    ["VISA CARD", "/visa card"],
+    ["KNIGHT CTF WRITEUPS", "/knight ctf"],
+    ["SHELL CTF WRITEUPS", "/shell ctf"],
+    ["IMAGINARY CTF", "/imaginary"]
+  ]

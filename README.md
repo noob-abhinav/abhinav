@@ -25,4 +25,4 @@ git clone https://github.com/siegerts/hugo-theme-basic themes/basic
 
 For more, checkout [official documentations](https://gohugo.io/documentation/).
 
-THANK YOU
+THANK YOU:)

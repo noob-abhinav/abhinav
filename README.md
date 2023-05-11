@@ -1,4 +1,4 @@
-# HUGO
+## HUGO
 
 Hugo is a static site generator that makes it easy to setup your own blog or personal website.
 
@@ -24,3 +24,5 @@ git clone https://github.com/siegerts/hugo-theme-basic themes/basic
 - Change `theme` entry in `config.toml` to the theme name
 
 For more, checkout [official documentations](https://gohugo.io/documentation/).
+
+THANK YOU
